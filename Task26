@@ -1,0 +1,8 @@
+def f(a, step):
+    if (step == 1):
+        return (a)
+    if (step != 1):
+        return (a * f(a, step - 1))
+a = int(input("число: "))
+step = int(input("степень: "))
+print("возведение в степень:", f(a, step))
